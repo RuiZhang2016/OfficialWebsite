@@ -54,7 +54,9 @@
                     <div class="navbar-header pull-left">
                         <a class="navbar-brand page-scroll" href="#page-top">
                             <!-- replace with your brand logo/text -->
-                            <span class="brand-logo"><img src="assets/images/logo.svg" onerror="this.src='assets/images/logo.png'; this.onerror=null;" alt="Canberra Circle - HTML5 Template" title="Canberra Circle - HTML5 Template" class="img-responsive"></span>
+                            <span class="brand-logo"><img src="assets/images/logo.svg" onerror="this.src='assets/images/logo.png'; this.onerror=null;" alt="Canberra Circle - HTML5 Template" title="Canberra Circle - HTML5 Template" class="img-responsive">
+                            <!-- <img src="assets/images/logo.jpg" class="img-responsive logoleft"> -->    
+                            </span>
                         </a>
                     </div>
                     <div class="main-nav pull-right">
@@ -99,8 +101,9 @@
                         <div class="carousel-caption">
                             <h1 class="animated slideInDown"><span class="highlight">Circulate </span>your life for the better</h1>
                             <p class="intro-text animated slideInUp">Canberra Circle</p>
-                            <a href="http://bit.ly/hh5_template" class="btn btn-default btn-lg">Wechat QR code</a>
-                        </div>
+                            <!-- 触发弹窗 - 图片改为你的图片地址 -->
+							<div id="myImg" alt="QR Code" class="btn btn-default btn-lg" onClick="qrCode()">Wechat QR code</div>
+                        </div>		 
                         <div class="overlay-detail"></div>
                     </div><!-- /.item -->
 
@@ -808,7 +811,19 @@
                         </section>
                     </div><!-- /.row -->
                 </div><!-- /.container-fluid -->
-
+				<!--QR window>
+				<!-- 弹窗 -->
+				<div id="myModal" class="modal">
+				 
+				  <!-- 关闭按钮 -->
+				  <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+				 
+				  <!-- 弹窗内容 -->
+				  <img class="modal-content" id="img01">
+				 
+				  <!-- 文本描述 -->
+				  <div id="caption">CBR Circle</div>
+				</div>
 
             
             <!-- Footer -->
@@ -851,7 +866,6 @@
                 <div class="nav pull-right scroll-top">
                     <a href="#home" title="Scroll to top"><i class="fa fa-angle-up"></i></a>
                 </div>
-
             </footer><!-- /.footer -->
 
 
