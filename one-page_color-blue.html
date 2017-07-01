@@ -45,6 +45,11 @@
       </script>
     <![endif]-->
 
+    <style type="text/css">
+     a:link {  
+                color:blue;    
+            }  
+    </style>
 </head>
 
 <body id="home">
@@ -54,7 +59,7 @@
                     <div class="navbar-header pull-left">
                         <a class="navbar-brand page-scroll" href="#page-top">
                             <!-- replace with your brand logo/text -->
-                            <span class="brand-logo"><img src="assets/images/logo.svg" onerror="this.src='assets/images/logo.png'; this.onerror=null;" alt="Canberra Circle - HTML5 Template" title="Canberra Circle - HTML5 Template" class="img-responsive">
+                            <span class="brand-logo"><img src="assets/images/logo2.png" onerror="this.src='assets/images/logo.png'; this.onerror=null;" alt="Canberra Circle - HTML5 Template" title="Canberra Circle - HTML5 Template" class="img-responsive logoleft">
                             <!-- <img src="assets/images/logo.jpg" class="img-responsive logoleft"> -->    
                             </span>
                         </a>
@@ -462,7 +467,7 @@
                 <div class="container">
                     <div class="row text-center">
                         <div class="col-md-12">
-                            <h2>Some of our recent work</h2>
+                            <h2>Recent Articles</h2>
                             <h3 class="caption white">Designed with passion and coded to perfection, Canberra Circle is a stylish responsive HTML template, that is packed with tons of features yet is so easy to use. </h3>
                         </div><!-- /.col-md-12 -->
                     </div><!-- /.row -->
@@ -471,20 +476,20 @@
                 <div class="container project-container text-center">
                     <div class="recent-project-carousel owl-carousel owl-theme popup-gallery">
                         <div class="item recent-project">
-                            <img src="assets/images/gallery/project-one.jpg" alt="">
+                            <img class="gallery" src="assets/images/gallery/project-one.jpg" alt="">
                             <div class="project-info">
-                                <h3>Lakeview Inc.</h3>
+                                <h3>Myway Card</h3>
                                 <ul class="project-meta">
                                     <li><a href="#">Website Design</a></li>
                                 </ul>
                             </div><!-- /.project-info -->
                             <div class="full-project">
-                                <a href="assets/images/gallery/project-one_xl.jpg" title="Lakeview Inc. | Website Design">View project <i class="fa fa-chevron-right"></i></a>
+                                <a href="assets/images/gallery/project-one.jpg" title="Lakeview Inc. | Website Design">View project <i class="fa fa-chevron-right"></i></a>
                             </div><!-- /.full-project -->
                         </div><!-- /.item -->
 
                         <div class="item recent-project">
-                            <img src="assets/images/gallery/project-two.jpg" alt="">
+                            <img class="gallery" src="assets/images/gallery/project-two.jpg" alt="">
                             <div class="project-info">
                                 <h3>Adam Productions</h3>
                                 <ul class="project-meta">
@@ -492,12 +497,12 @@
                                 </ul>
                             </div><!-- /.project-info -->
                             <div class="full-project">
-                                <a href="assets/images/gallery/project-two_xl.jpg" title="Adam Productions | App Design">View project <i class="fa fa-chevron-right"></i></a>
+                                <a href="assets/images/gallery/project-two.jpg" title="Adam Productions | App Design">View project <i class="fa fa-chevron-right"></i></a>
                             </div><!-- /.full-project -->
                         </div><!-- /.item -->
 
                         <div class="item recent-project">
-                            <img src="assets/images/gallery/project-three.jpg" alt="">
+                            <img class="gallery" src="assets/images/gallery/project-three.jpg" alt="">
                             <div class="project-info">
                                 <h3>Doe Associates</h3>
                                 <ul class="project-meta">
@@ -505,12 +510,12 @@
                                 </ul>
                             </div><!-- /.project-info -->
                             <div class="full-project">
-                                <a href="assets/images/gallery/project-three_xl.jpg" title="Doe Associates | Branding">View project <i class="fa fa-chevron-right"></i></a>
+                                <a href="assets/images/gallery/project-three.jpg" title="Doe Associates | Branding">View project <i class="fa fa-chevron-right"></i></a>
                             </div><!-- /.full-project -->
                         </div><!-- /.item -->
 
                         <div class="item recent-project">
-                            <img src="assets/images/gallery/project-four.jpg" alt="">
+                            <img class="gallery" src="assets/images/gallery/project-four.jpg" alt="">
                             <div class="project-info">
                                 <h3>Omega Corporation</h3>
                                 <ul class="project-meta">
@@ -518,10 +523,22 @@
                                 </ul>
                             </div><!-- /.project-info -->
                             <div class="full-project">
-                                <a href="assets/images/gallery/project-four_xl.jpg" title="Omega Corporation | App Design">View project <i class="fa fa-chevron-right"></i></a>
+                                <a href="assets/images/gallery/project-four.jpg" title="Omega Corporation | App Design">View project <i class="fa fa-chevron-right"></i></a>
                             </div><!-- /.full-project -->
                         </div><!-- /.item -->
 
+                        <div class="item recent-project">
+                            <img class="gallery" src="assets/images/gallery/project-five.jpg" alt="">
+                            <div class="project-info">
+                                <h3>Omega Corporation</h3>
+                                <ul class="project-meta">
+                                    <li><a href="#">App Design</a></li>
+                                </ul>
+                            </div><!-- /.project-info -->
+                            <div class="full-project">
+                                <a href="assets/images/gallery/project-five.jpg" title="Omega Corporation | App Design">View project <i class="fa fa-chevron-right"></i></a>
+                            </div><!-- /.full-project -->
+                        </div><!-- /.item -->
                     </div><!-- /.recent-project-carousel -->
 
                     <div class="customNavigation project-navigation text-center">
@@ -768,24 +785,10 @@
                     <div class="row form-container">
 
                         <div class="col-md-8 contact-form">
-                            <h3>Drop us a line</h3>
-                            <form class="ajax-form" id="contactForm" method="post" action="assets/php/contact.php">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="name" name="name" placeholder="Your Name..." value="" required>
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" class="form-control" id="email" name="email" placeholder="Your email..." value="" required>
-                                </div>
-                                <div class="form-group">
-                                    <input type="phone" class="form-control" id="phone" name="phone" placeholder="Your phone..." value="" required>
-                                </div>
-                                <div class="form-group">
-                                    <textarea class="form-control" rows="4" name="message" placeholder="Your message..." required></textarea>
-                                </div>
-                                <div class="form-group">
-                                    <button type="submit" name="submit" class="btn btn-default"><i class="fa fa-paper-plane fa-fw"></i> Send</button>
-                                </div>
-                            </form>
+                        <ul>
+                            <img class="qrlogo" src="assets/images/qrCode.jpg">
+                            <img class="qrlogo" src="assets/images/qrCode.jpg">
+                        </ul>
                         </div><!-- /.contact-form -->
 
                         <div class="col-md-4 contact-address">
@@ -794,7 +797,7 @@
                                 <br />Acton, ACT
                                 <br /> Australia</p>
                             <ul>
-                                <li><span>Email:</span>contact@cbrcircle.com</li>
+                                <li><span>Email:</span><a href="mailto:contact@cbrcircle.com">contact@cbrcircle.com</a></li>
                                 <li><span>Phone:</span>+61-4 047 633 08</li>
                             </ul>
                         </div><!-- /.contact-address -->
@@ -834,7 +837,7 @@
                             <a href="#" title="Canberra Circle - HTML5 Template">
                                 <h2>
                                     <!-- replace with your brand logo/text -->
-                                    <img src="assets/images/logo.svg" onerror="this.src='assets/images/logo.png'; this.onerror=null;" alt="Canberra Circle - HTML5 Template" title="Canberra Circle - HTML5 Template" class="img-responsive">
+                                    <img src="assets/images/logo2.png" onerror="this.src='assets/images/logo.png'; this.onerror=null;" alt="Canberra Circle - HTML5 Template" title="Canberra Circle - HTML5 Template" class="img-responsive btlogo">
                                 </h2>
                             </a>
                             <p class="white">We believe in Simple, Creative &amp; Flexible Design Standards.</p>

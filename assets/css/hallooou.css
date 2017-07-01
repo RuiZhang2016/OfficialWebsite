@@ -1270,6 +1270,7 @@ ul.project-meta{
 
 .contact-address ul li{
     font-size: 16px;
+    color: grey;
 }
 
 .contact-address ul li span{
@@ -2005,15 +2006,17 @@ body {
  
 /* ¹Ø±Õ°´Å¥ */
 .close {
-    position: absolute;
+    position: e;
+    margin:auto;
     top: 80px;
     right: 350px;
     color: #f1f1f1;
     font-size: 40px;
     font-weight: bold;
     transition: 0.3s;
+
 }
- 
+    
 .close:hover,
 .close:focus {
     color: #bbb;
@@ -2030,9 +2033,24 @@ body {
 
 /*for image logo*/
 .logoleft{
-    position: relative;
-    height: 10%;
-    width: 10%;
+    position: absolute;
+    height: 60px;
+    width: 200px;
+    left: 5%;
+    top:5%;
+}
+.qrlogo,.btlogo{
+    height: 30%;
+    width: 30%;
+}
+.btlogo{
+    margin: auto;
+}
+/*gallery
+-------------------------------------------------*/
+.gallery{
+    height: 317px;
+    width: 370px;
 }
 /* Debug styles (remove before exporting for production)
 /* ---------------------------------------------- */
